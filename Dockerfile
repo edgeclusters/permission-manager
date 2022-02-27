@@ -1,6 +1,9 @@
 # this docker file is used for the release
 FROM golang:1.16 as builder
 
+RUN apt-get update && apt-get install -y \
+  python2 \
+  && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY go.mod go.sum ./
 RUN apt-get update && apt-get install -y npm=7.5.2+ds-2
