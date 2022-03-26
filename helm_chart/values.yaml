@@ -78,6 +78,6 @@ tolerations: []
 affinity: {}
 
 config: 
-  clusterName: "" 
-  controlePlaneAddress: "" 
+  clusterName: "edgecluster.local" 
+  controlePlaneAddress: "http:/xxx" 
   basicAuthPassword: RrXwZSBdTXhQL6 
